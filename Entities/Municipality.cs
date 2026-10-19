@@ -7,6 +7,5 @@ public class Municipality
     public string? Phone { get; set; }     // nullable: optional
     public string? Address { get; set; }
 
-    // Municipality 1 -> N Sites
     public ICollection<WasteCollectionSite> Sites { get; set; } = new List<WasteCollectionSite>();
 }
